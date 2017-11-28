@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicAnimationController">
+            <connections>
+                <outlet property="green" destination="xtj-kd-6fv" id="ZAq-W0-mZP"/>
+                <outlet property="red" destination="ksY-2h-zvX" id="Mpv-Ud-GgY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9uZ-gC-3H1"/>
+                <outlet property="yellow" destination="UAX-nl-tea" id="UeA-VQ-Sgb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksY-2h-zvX">
+                    <rect key="frame" x="164" y="130" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.23418314195511747" blue="0.40171604689824814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="xgC-Kp-z68"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STKaitiSC-Regular" family="Kaiti SC" pointSize="14"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtj-kd-6fv">
+                    <rect key="frame" x="164" y="190" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.29652710460904941" green="1" blue="0.20234751244034466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2s9-t1-EQy"/>
+                        <constraint firstAttribute="height" constant="30" id="NG6-db-8nf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STKaitiSC-Regular" family="Kaiti SC" pointSize="14"/>
+                    <connections>
+                        <action selector="btn1Clicked:" destination="-1" eventType="touchUpInside" id="pnY-kA-dyw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAX-nl-tea">
+                    <rect key="frame" x="164" y="250" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.9390888687922605" green="1" blue="0.14456897104592226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="aNp-co-1Vq"/>
+                        <constraint firstAttribute="height" constant="30" id="kHS-rC-XEC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STKaitiSC-Regular" family="Kaiti SC" pointSize="14"/>
+                    <connections>
+                        <action selector="btn1Clicked:" destination="-1" eventType="touchUpInside" id="BPM-3U-uEZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGI-d5-IZk">
+                    <rect key="frame" x="121" y="587" width="117" height="34"/>
+                    <color key="backgroundColor" red="0.39791066910360784" green="1" blue="0.16650883857901622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="y6k-Fs-FNN"/>
+                    </constraints>
+                    <state key="normal" title="启动红绿灯"/>
+                    <connections>
+                        <action selector="startAnimations" destination="-1" eventType="touchUpInside" id="Qsw-Zb-rDM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xtj-kd-6fv" firstAttribute="top" secondItem="ksY-2h-zvX" secondAttribute="bottom" constant="30" id="0kK-Tk-9oe"/>
+                <constraint firstItem="eGI-d5-IZk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="121" id="8Fq-E0-TBp"/>
+                <constraint firstItem="ksY-2h-zvX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="164" id="CZC-kM-XNp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ksY-2h-zvX" secondAttribute="trailing" constant="181" id="EKM-hp-gJd"/>
+                <constraint firstItem="ksY-2h-zvX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="110" id="KQN-Ph-d7K"/>
+                <constraint firstItem="xtj-kd-6fv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="164" id="TJb-ft-kn3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eGI-d5-IZk" secondAttribute="trailing" constant="137" id="aGk-Pm-Bck"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UAX-nl-tea" secondAttribute="trailing" constant="181" id="hYL-Gk-nJs"/>
+                <constraint firstItem="UAX-nl-tea" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="164" id="qyJ-M0-wEb"/>
+                <constraint firstItem="xtj-kd-6fv" firstAttribute="top" secondItem="ksY-2h-zvX" secondAttribute="bottom" constant="30" id="w1y-VW-78D"/>
+                <constraint firstItem="UAX-nl-tea" firstAttribute="top" secondItem="xtj-kd-6fv" secondAttribute="bottom" constant="30" id="w2l-o4-nI9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eGI-d5-IZk" secondAttribute="bottom" constant="46" id="yvl-60-v2g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xtj-kd-6fv" secondAttribute="trailing" constant="181" id="zc1-fx-54G"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-398.5" y="43.5"/>
+        </view>
+    </objects>
+</document>
